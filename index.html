@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>for builder</title>
+    <title>Message</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: black; /* Default color of the front */
+        }
+    </style>
 </head>
-<body>
+<body onclick="changeFrontColor()">
     <h1>1242098228590149793</h1>
-    <p>MTI0MjA5NzQ3OTA2Mzk2NTcyOA.GphBvr.KM3hxOpOAA2o8SAtz0_O_s6YYxxan2R5PKRGTM
-.</p>
+    <p>MTI0MjA5NzQ3OTA2Mzk2NTcyOA.Gt7Ekb.zFmgRkDH6W3iixgCzCFivyzaG_SCfi4p6t3PgM.</p>
+
+    <script>
+        function changeFrontColor() {
+            // Change the color of the front to a random color
+            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.color = randomColor;
+        }
+    </script>
 </body>
 </html>
